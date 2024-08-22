@@ -1,0 +1,115 @@
+/* Estilo para el contenedor principal del chat */
+.chat-layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* Estilo para la barra lateral */
+.sidebar {
+  width: 25%; /* Ajusta el ancho según tus necesidades */
+  background-color: rgba(0, 0, 0, 0.3); /* Fondo oscuro translúcido */
+  padding: 20px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid #ddd; /* Línea vertical para separar del chat */
+  backdrop-filter: blur(10px); /* Efecto de vidrio esmerilado */
+}
+
+/* Estilo para la lista de servidores */
+.servers {
+  flex: 1;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd; /* Línea horizontal para separar la lista de servidores */
+  padding-bottom: 10px;
+}
+
+/* Estilo para la lista de canales */
+.channels {
+  flex: 1;
+  border-top: 2px solid #ddd; /* Línea horizontal para separar la lista de canales de los servidores */
+  padding-top: 10px;
+}
+
+/* Botón para crear elementos */
+.create-btn {
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00aaff; /* Celeste oscuro */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-btn:hover {
+  background-color: #0088cc; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilo para el contenedor de chat */
+.chat-container {
+  width: 75%; /* Ajusta el ancho según tus necesidades */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-left: 2px solid #ddd; /* Línea vertical para separar de la barra lateral */
+}
+
+/* Estilo para la lista de mensajes */
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  border-bottom: 2px solid #ddd; /* Línea horizontal para separar los mensajes del área de entrada */
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo blanco translúcido */
+  backdrop-filter: blur(10px); /* Efecto de vidrio esmerilado */
+}
+
+/* Estilo para el contenedor de entrada de mensajes */
+.input-container {
+  display: flex;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo blanco translúcido */
+  border-top: 2px solid #ddd; /* Línea horizontal para separar la entrada de mensajes de los mensajes */
+  backdrop-filter: blur(10px); /* Efecto de vidrio esmerilado */
+}
+
+/* Estilo para el campo de entrada de texto */
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #000000; /* Borde negro */
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #000000; /* Texto negro */
+  background: rgba(255, 255, 255, 0.2); /* Fondo blanco translúcido */
+}
+
+/* Estilo para el botón de enviar mensaje */
+button {
+  margin-left: 10px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #00aaff; /* Celeste oscuro */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0088cc; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilo para el botón de eliminar */
+.delete-btn {
+  background-color: #ff4d4d; /* Rojo para eliminar */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: darkred; /* Color más oscuro al pasar el mouse */
+}

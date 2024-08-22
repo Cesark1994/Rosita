@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  margin: 0;
+  font-family: "Roboto", sans-serif; /* Cambiado a Roboto para toda la aplicación */
+  line-height: 1.5;
+  font-weight: 400; /* Peso de fuente normal para el texto */
+
+  color-scheme: light dark;
+  color: #ffffff; /* Blanco para el texto principal */
+  background-color: #f5f5f5; /* Fondo claro para el efecto glass */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  background-color: #f5f5f5; /* Fondo claro para el efecto glass */
+  background-image: url('/nosotros-banner.jpg'); /* Asegúrate de usar la ruta correcta */
+  background-size: cover; /* Asegura que la imagen cubra todo el área */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  font-family: "Roboto", sans-serif; /* Cambiado a Roboto para toda la aplicación */
+  font-weight: 400; /* Peso de fuente normal para el texto */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Color negro con 40% de opacidad */
+  pointer-events: none; /* Para que no interfiera con la interacción del usuario */
+}
+
+a {
+  font-weight: 700; /* Aplica negrita a los enlaces */
+  color: #00aaff; /* Celeste oscuro */
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #0088cc; /* Celeste más oscuro */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #ffffff; /* Blanco */
+  text-decoration: underline #00aaff; /* Celeste oscuro */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 700; /* Aplica negrita a los botones */
+  font-family: inherit;
+  background-color: rgba(26, 26, 26, 0.7); /* Fondo negro con transparencia */
+  color: #ffffff; /* Texto blanco */
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #00aaff; /* Celeste oscuro */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#root {
+  height: 100vh; /* Asegura que el contenedor principal tenga al menos el alto de la ventana del navegador */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  backdrop-filter: blur(10px); /* Efecto de vidrio esmerilado */
+  background: rgba(255, 255, 255, 0.1); /* Fondo blanco semitransparente */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Asegura que el contenedor ocupe el espacio disponible */
+}
+
+.app-container > * {
+  flex: 1;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #00aaffaa); /* Celeste oscuro */
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #ffffff; /* Blanco para el texto principal */
+    background-color: #f5f5f5; /* Fondo claro */
+  }
+
+  a:hover {
+    color: #0088cc; /* Celeste más oscuro */
+  }
+
+  button {
+    background-color: #f9f9f9; /* Fondo claro para botones */
+    color: #000000; /* Texto negro */
+  }
+}

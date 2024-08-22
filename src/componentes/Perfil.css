@@ -1,0 +1,69 @@
+.profile-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #000000; /* Borde negro para mantener la coherencia */
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco translúcido */
+  backdrop-filter: blur(10px); /* Efecto de vidrio esmerilado */
+  color: #ffffff; /* Texto blanco para el contraste */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff; /* Blanco para el contraste del texto */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000000; /* Borde negro */
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.2); /* Fondo blanco translúcido */
+  color: #000000; /* Texto negro */
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #00aaff; /* Celeste oscuro */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0088cc; /* Celeste más oscuro al pasar el mouse */
+}
+
+button:disabled {
+  background-color: #ccc; /* Gris claro para el botón deshabilitado */
+}
+
+.error-message {
+  color: #ff4d4d; /* Rojo para mensajes de error */
+}
+
+.user-profile {
+  padding: 1em;
+}
+
+.user-name {
+  color: #00aaff; /* Celeste oscuro */
+}
+
+.user-email {
+  color: #ffffff; /* Blanco */
+}
+
+.user-profile-info {
+  color: #e0e0e0; /* Gris claro */
+}

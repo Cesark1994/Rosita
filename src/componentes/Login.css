@@ -1,0 +1,82 @@
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4); /* Fondo oscuro con algo de transparencia */
+    backdrop-filter: blur(10px); /* Efecto de vidrio esmerilado */
+}
+
+.app-title {
+    font-size: 2.5rem;
+    color: #00aaff; /* Celeste oscuro */
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #ffffff; /* Blanco para contraste */
+    margin-bottom: 1.5rem;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.1); /* Fondo blanco translúcido */
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    color: #ffffff; /* Blanco para contraste */
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #000000; /* Borde negro */
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #000000; /* Texto negro */
+    background: rgba(255, 255, 255, 0.2); /* Fondo blanco translúcido */
+}
+
+input::placeholder {
+    color: #000000; /* Texto negro para placeholder */
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #00aaff; /* Celeste oscuro */
+    color: #ffffff; /* Blanco para el texto */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0088cc; /* Color más oscuro al pasar el mouse */
+}
+
+button:disabled {
+    background-color: #aaaaaa; /* Color gris cuando está deshabilitado */
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: #ff4d4d; /* Rojo para mensajes de error */
+    font-size: 0.875rem;
+    margin-top: 1rem;
+}
